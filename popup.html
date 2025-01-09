@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Image Downloader Settings</title>
+  <style>
+    body {
+      width: 300px;
+      padding: 15px;
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    button {
+      background: #4285f4;
+      color: white;
+      border: none;
+      padding: 8px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #3367d6;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Image Downloader & Converter</h2>
+    <p>Click the download button that appears on images to save them as PNG.</p>
+    <button id="openDownloads">Open Downloads Folder</button>
+  </div>
+  <script>
+    document.getElementById('openDownloads').addEventListener('click', () => {
+      chrome.downloads.showDefaultFolder();
+    });
+  </script>
+</body>
+</html>

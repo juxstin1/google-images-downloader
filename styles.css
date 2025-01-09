@@ -1,0 +1,23 @@
+.image-downloader-btn {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: #4285f4;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 6px 12px;
+    cursor: pointer;
+    font-size: 14px;
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.image-downloader-btn:hover {
+    background-color: #3367d6;
+}
+
+.isv-r:hover .image-downloader-btn {
+    opacity: 1;
+}
